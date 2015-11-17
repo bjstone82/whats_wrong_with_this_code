@@ -33,3 +33,6 @@ void example1()
   bar(string(ptr) + " + " + str); //C++98/C++11 3x Constructor calls
   bar(ptr + " + "s + str); //C++14 3 nicer
 }
+
+//Source: Stephan T. Lavavej - Don't help the compiler (GoingNative 2013)
+//        https://www.youtube.com/watch?v=AKtHxKJRwp4

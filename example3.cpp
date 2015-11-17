@@ -56,3 +56,6 @@ void example3()
 {
   ReasourceManager();
 }
+
+//Source: Stephan T. Lavavej - Don't help the compiler (GoingNative 2013)
+//        https://www.youtube.com/watch?v=AKtHxKJRwp4
