@@ -9,4 +9,5 @@ add_executable(whats_wrong_with_this_code
                example3.cpp
                example4.cpp
                example5.cpp
-               example6.cpp)
+               example6.cpp
+               example7.cpp)

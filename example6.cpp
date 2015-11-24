@@ -22,10 +22,10 @@ class Bike : public Vehicle
     {return "Bike!";}
 };
 
-void foo(Vehicle& vehicle) { cout << "Vehicle" << endl; }
-void foo(Vehicle* vehicle) { cout << "Vehicle" << endl; }
-void foo(Car* car)         { cout << "Car"     << endl; }
-void foo(Bike* bike)       { cout << "Bike"    << endl; }
+void foo(Vehicle& /*vehicle*/) { cout << "Vehicle" << endl; }
+void foo(Vehicle* /*vehicle*/) { cout << "Vehicle" << endl; }
+void foo(Car* /*car*/)         { cout << "Car"     << endl; }
+void foo(Bike* /*bike*/)       { cout << "Bike"    << endl; }
 
 void bar(Vehicle& vehicle) { cout << vehicle.name()  << endl; }
 void bar(Vehicle* vehicle) { cout << vehicle->name() << endl; }
