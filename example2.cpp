@@ -4,10 +4,11 @@ using namespace std;
 
 //Example 2
 string getStringFromFile(const string&){return "";}
+char* getCStringFromFile(const string&){static char bigString[10] = "Big string"; return bigString;}
 //void example2()
 //{
 //  string bigStrA = getStringFromFile("FileA.txt"); // Memory allocation
-//  string bigStrB = getStringFromFile("FileB.txt"); // Memory allocation
+//  string bigStrB = getCStringFromFile("FileB.txt"); // Memory allocation
 //  const char* tinyPtr = "Test";
 //  vector<string> v;
 //  v.push_back(tinyPtr);
@@ -42,7 +43,7 @@ void example2()
   const char* tinyPtr = "Test";
   vector<string> v;
   v.push_back(tinyPtr);
-  v.emplace_back( getStringFromFile("FileA.txt") ); // Memory allocation
+  v.emplace_back( getCStringFromFile("FileA.txt") ); // Memory allocation
   bigStrB += tinyPtr;
   v.push_back( std::move(bigStrB) );
 
